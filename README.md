@@ -51,7 +51,7 @@ This section represents the specific questions and requests that stakeholders ha
 
 ## Insights Deep Dive
 ### Sales Trends
-![alt text](assets/TotalSalesAndGrowth.png)
+![alt text](assets/TotalSalesAndGrowthLine.png)
 
 ![alt text](assets/TotalSalesRevTable.png)
 
@@ -60,7 +60,7 @@ This section represents the specific questions and requests that stakeholders ha
 ![alt text](assets/MarketingChannelRevenue.png)
 
 #### Regions
-![alt text](assets/CountryLeaderboard.png)
+![alt text](assets/Top10Countries.png)
 
 #### Loyalty Program
 ![alt text](assets/LoyaltyRevenueAOVRefund.png)
