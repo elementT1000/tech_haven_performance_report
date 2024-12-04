@@ -10,10 +10,6 @@ This section represents the specific questions and requests that stakeholders ha
 1. What were Tech Haven's sales revenue trends between 2019 and 2022?
 2. During which month do we see our highest/lowest revenue?
 3. What is the Average Order Value (AOV)?
-    > Line graph of monthly income with callouts for high and low rev months of each year
-    > MoM Growth
-    > Table with Sales Rev, AOV, and order count for each year
-    > Monthly Revenue Worksheet
 
 **Consumer Behavior**
 4. Which marketing channel brings us the most customers?
@@ -43,11 +39,36 @@ This section represents the specific questions and requests that stakeholders ha
 
 ## Insights Deep Dive
 ### Sales Trends
-Chart the monthly revenue totals for the 
+![alt text](assets/TotalSalesAndGrowth.png)
+
+![alt text](assets/TotalSalesRevTable.png)
 
 ### Consumer Behavior
+#### Marketing
+![alt text](assets/MarketingChannelRevenue.png)
 
+#### Regions
+![alt text](assets/CountryLeaderboard.png)\
+
+#### Loyalty Program
+![alt text](assets/LoyaltyRevenueAOVRefund.png)
+
+![alt text](assets/LoyaltyLineChart.png)
+
+![alt text](assets/UniqueCustomersByYear.png)
 
 ### Products and Refunds
+![alt text](assets/ProductsAndRefunds.png)
 
 
+## Recommendations
+
+
+## Questions, Feedback, and Limitations
+### Questions for Stakeholders
+
+
+### Feedback on Data Quality
+
+
+### Limitations
