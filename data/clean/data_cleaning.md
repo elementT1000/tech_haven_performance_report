@@ -17,6 +17,7 @@ A record of data cleaning functions used on the raw data.
 2. bose soundsport headphones > Bose Soundsport Headphones
 3. 'usd_price' data type > Currency
 4. 'usd_price' contains empty values. for these rows, 'local_price' is also zero and the 'order_id' values are not present in 'returns; sheet. So, deleted these.
+    - Only occurse in the following currencies: KES, LKR, GHS, MAD, BOB, PYG, RSD, MMK, JOD, and DZD
 5. Blanks in 'usd_price'. Local currency present > fill in blanks with corresponding values for these currencies from other rows. 
 6. There are many more product codes than products. All codes correspond to a single product and I do not plan on using them for this analysis. So, leave them like they are. 
 7. No duplicates found in 'order_id.'
