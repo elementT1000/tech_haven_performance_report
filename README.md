@@ -36,7 +36,8 @@ This section represents the specific questions and requests that stakeholders ha
 ## Table of Contents
 
 1. [Executive Summary](#executive-summary)
-2. [Insights Deep Dive](#insights-deep-dive)
+2. [Database Schema](#database-schema)
+3. [Insights Deep Dive](#insights-deep-dive)
    - [Sales Trends](#sales-trends)
      - [Overview of Revenue Trends (2019–2022)](#overview-of-revenue-trends-2019-2022)
      - [Seasonality and Revenue Growth Patterns](#seasonality-and-revenue-growth-patterns)
@@ -51,14 +52,30 @@ This section represents the specific questions and requests that stakeholders ha
      - [Overview](#overview)
      - [Sales Performance](#sales-performance)
      - [Summary and Key Takeaways](#summary-and-key-takeaways)
-3. [Recommendations](#recommendations)
-4. [Questions and Limitations](#questions-and-limitations)
+4. [Recommendations](#recommendations)
+5. [Questions and Limitations](#questions-and-limitations)
    - [Questions for Stakeholders](#questions-for-stakeholders)
    - [Limitations: Data Quality and Completeness](#limitations-data-quality-and-completeness)
 
 
 ## Executive Summary
 Tech Haven’s performance analysis from 2019 to 2022 highlights key opportunities and challenges in sales, marketing, and product strategy. While revenue grew 41% since 2019, sales have declined steadily post-pandemic, with December consistently underperforming, indicating missed opportunities during the holiday season. Direct marketing drives the majority of sales, though affiliate marketing offers untapped potential with the highest Average Order Value (AOV) at $312. The loyalty program, despite its large membership base, underperforms, as members contribute less revenue, have lower AOVs, and higher refund rates compared to non-members. Product performance is dominated by high-revenue items like the 27in 4K Gaming Monitor and Apple AirPods, while low-volume products such as Bose Headphones and Samsung Charging Packs contribute minimally. To address these issues, strategic focus on optimizing Q4 marketing, expanding affiliate efforts, refining the product lineup, and redesigning the loyalty program is recommended to drive growth and improve customer engagement.
+
+## Database Schema
+*Figure 0: Entity Relationship Diagram for Tech Haven's Database*
+![alt text](assets/th_db_ERD.png)
+
+Tech Haven makes use of a relational database. The main components used for this analysis are stored in four tables: ORDERS, PROFILES, RETURNS, and REGION_CODES. 
+They have the following relationships:
+- ORDERS → PROFILES: A one-to-many relationship through `customer_id`, indicating that each customer can place multiple orders.
+- PROFILES → REGION_CODES: A one-to-one relationship through `country_code`, connecting customer profiles to their geographic regions.
+- ORDERS → RETURNS: A one-to-one relationship through `order_id`, indicating that some orders may result in returns.
+
+This data was retrieved using SQL queries and imported into Microsoft Excel for two primary reasons:
+1. To utilize straightforward tools for creating pivot tables and visualizations.
+2. To share the workbook and results with Tech Haven employees who do not have database access.
+
+The resulting Excel workbook with cleaned data (sheets and binary format) is stored in the `data/workbook  ` directory. 
 
 ## Insights Deep Dive
 ### Sales Trends
